@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="{{ .Lang }}">
+
+    <head>
+        <meta charset="utf-8">
+        <title>{{ .Title }}</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="icon.png">
+        
+        <link rel="stylesheet" href='{{ "/css/vendor/normalize.css" | relURL }}'>
+        <link rel="stylesheet" href='{{ "/css/vendor/bootstrap.min.css" | relURL }}'>
+        <link rel="stylesheet" href='{{ "/css/main.css" | relURL }}'>
+
+    </head>
+
+    <body>
+        {{ `
+        <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        ` | safeHTML }} 
+
+        {{- block "main" . }}{{- end }}
+
+        <script src='{{ "/js/vendor/modernizr-3.6.0.min.js" | relURL }}'></script>
+        <script src='{{ "/js/vendor/jquery-3.3.1.min.js" | relURL }}'></script>
+        <script src='{{ "/js/vendor/bootstrap.bundle.min.js" | relURL }}'></script>        
+        <script src='{{ "/js/vendor/Chart.bundle.min.js" | relURL }}'></script>   
+        
+        <script src='{{ "js/plugins.js" | relURL }}'></script>
+        <script src='{{ "js/main.js" | relURL }}'></script>
+
+    </body>
+
+</html>

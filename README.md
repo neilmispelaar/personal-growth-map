@@ -1,3 +1,3 @@
-# The Daily
+# Personal Growth Map
 
-The Daily Redesign Project
+Mapping all of the current and desired skills using chart.js 

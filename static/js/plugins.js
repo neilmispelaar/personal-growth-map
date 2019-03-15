@@ -44,7 +44,7 @@ new Chart(document.getElementById("strategic-design-skills"), {
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(255,99,132,1)",
         pointBorderColor: "#fff",
-        data: [0,1,2,1,1,2,0]
+        data: [1,2,2,1,1,2,1]
       }
     ]
   },
@@ -58,7 +58,7 @@ new Chart(document.getElementById("strategic-design-skills"), {
 new Chart(document.getElementById("design-skills"), {
   type: 'radar',
   data: {	
-    labels: ["Graphic design", "Video", "Presenting", "Accessibility (WCAG)", "Interaction design", "Wireframing", "Prototyping", "Visual representation"],
+    labels: ["Graphic design", "Video", "Accessibility (WCAG)", "Interaction design", "Wireframing", "Prototyping", "Visual representation"],
     datasets: [
       { 
         label: "Current State",
@@ -76,7 +76,7 @@ new Chart(document.getElementById("design-skills"), {
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(255,99,132,1)",
         pointBorderColor: "#fff",
-        data: [0,1,3,1,2,1,1]
+        data: [0,1,3,2,2,2,2]
       }
     ]
   },
@@ -147,7 +147,7 @@ new Chart(document.getElementById("other-skills"), {
         borderColor: "rgba(179,181,198,1)",
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(179,181,198,1)",
-        data: [0,2.0,3.0,2.0,2.0,2.0]
+        data: [1,2.0,3.0,2.0,2.0,2.0]
       }, {
         label: "Desired State",
         fill: true,
@@ -156,7 +156,7 @@ new Chart(document.getElementById("other-skills"), {
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(255,99,132,1)",
         pointBorderColor: "#fff",
-        data: [3,2,2,3,3,2]
+        data: [1,2,3,2,3,1]
       }
     ]
   },

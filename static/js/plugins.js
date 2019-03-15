@@ -26,7 +26,7 @@
 new Chart(document.getElementById("strategic-design-skills"), {
   type: 'radar',
   data: {	
-    labels: ["Facilitation", "Design thinking", "Presenting", "Communication", "UX strategy and planning", "Negotiation"],
+    labels: ["Ethnographic", "Journey map", "Information architecture", "Personas", "Usability testing", "Needs analysis", "Analysis and interpretation of research data"],
     datasets: [
       { 
         label: "Current State",
@@ -35,7 +35,7 @@ new Chart(document.getElementById("strategic-design-skills"), {
         borderColor: "rgba(179,181,198,1)",
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(179,181,198,1)",
-        data: [0,2.0,3.0,2.0,2.0,2.0]
+        data: [0,1,2,1,1,2,0]
       }, {
         label: "Desired State",
         fill: true,
@@ -44,23 +44,21 @@ new Chart(document.getElementById("strategic-design-skills"), {
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(255,99,132,1)",
         pointBorderColor: "#fff",
-        data: [3,2,2,3,3,2]
+        data: [0,1,2,1,1,2,0]
       }
     ]
   },
   options: {
     title: {
-      display: true,
-      text: 'Other Skills'
+      display: false,
     }
   }
 });
-
 
 new Chart(document.getElementById("design-skills"), {
   type: 'radar',
   data: {	
-    labels: ["Facilitation", "Design thinking", "Presenting", "Communication", "UX strategy and planning", "Negotiation"],
+    labels: ["Graphic design", "Video", "Presenting", "Accessibility (WCAG)", "Interaction design", "Wireframing", "Prototyping", "Visual representation"],
     datasets: [
       { 
         label: "Current State",
@@ -69,7 +67,7 @@ new Chart(document.getElementById("design-skills"), {
         borderColor: "rgba(179,181,198,1)",
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(179,181,198,1)",
-        data: [0,2.0,3.0,2.0,2.0,2.0]
+        data: [0,1,3,1,2,1,1]
       }, {
         label: "Desired State",
         fill: true,
@@ -78,7 +76,7 @@ new Chart(document.getElementById("design-skills"), {
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(255,99,132,1)",
         pointBorderColor: "#fff",
-        data: [3,2,2,3,3,2]
+        data: [0,1,3,1,2,1,1]
       }
     ]
   },
@@ -91,11 +89,14 @@ new Chart(document.getElementById("design-skills"), {
 });
 
 
-
 new Chart(document.getElementById("development-skills"), {
   type: 'radar',
+  scaleOverride: true,
+  scaleSteps: 5,
+  scaleStepWidth: 1,
+  scaleStartValue: 0,
   data: {	
-    labels: ["Facilitation", "Design thinking", "Presenting", "Communication", "UX strategy and planning", "Negotiation"],
+    labels: ["JavaScript", "React", "WCAG", "Fancy CSS", "Web Experience Toolkit", "JAVA/Struts", "XAML/WPF"],
     datasets: [
       { 
         label: "Current State",
@@ -104,7 +105,7 @@ new Chart(document.getElementById("development-skills"), {
         borderColor: "rgba(179,181,198,1)",
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(179,181,198,1)",
-        data: [0,2.0,3.0,2.0,2.0,2.0]
+        data: [3,1,3,3,2,2,1]
       }, {
         label: "Desired State",
         fill: true,
@@ -113,7 +114,7 @@ new Chart(document.getElementById("development-skills"), {
         pointBorderColor: "#fff",
         pointBackgroundColor: "rgba(255,99,132,1)",
         pointBorderColor: "#fff",
-        data: [3,2,2,3,3,2]
+        data: [3,3,3,3,2,2,1]
       }
     ]
   },
@@ -121,6 +122,13 @@ new Chart(document.getElementById("development-skills"), {
     title: {
       display: true,
       text: 'Other Skills'
+    },
+    scale: { 
+      ticks: {
+        beginAtZero: true,
+        min: 0,
+        max: 4
+      }
     }
   }
 });

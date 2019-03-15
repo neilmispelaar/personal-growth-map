@@ -49,8 +49,12 @@ new Chart(document.getElementById("strategic-design-skills"), {
     ]
   },
   options: {
-    title: {
-      display: false,
+    scale: { 
+      ticks: {
+        beginAtZero: true,
+        min: 0,
+        max: 4
+      }
     }
   }
 });
@@ -81,9 +85,12 @@ new Chart(document.getElementById("design-skills"), {
     ]
   },
   options: {
-    title: {
-      display: true,
-      text: 'Other Skills'
+    scale: { 
+      ticks: {
+        beginAtZero: true,
+        min: 0,
+        max: 4
+      }
     }
   }
 });
@@ -119,10 +126,6 @@ new Chart(document.getElementById("development-skills"), {
     ]
   },
   options: {
-    title: {
-      display: true,
-      text: 'Other Skills'
-    },
     scale: { 
       ticks: {
         beginAtZero: true,
@@ -161,9 +164,12 @@ new Chart(document.getElementById("other-skills"), {
     ]
   },
   options: {
-    title: {
-      display: true,
-      text: 'Other Skills'
+    scale: { 
+      ticks: {
+        beginAtZero: true,
+        min: 0,
+        max: 4
+      }
     }
   }
 });

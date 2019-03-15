@@ -23,7 +23,8 @@
         <![endif]-->
         ` | safeHTML }} 
 
-        {{- block "main" . }}{{- end }}
+        {{ block "main" . }}{{ end }}
+
 
         <script src='{{ "/js/vendor/modernizr-3.6.0.min.js" | relURL }}'></script>
         <script src='{{ "/js/vendor/jquery-3.3.1.min.js" | relURL }}'></script>
